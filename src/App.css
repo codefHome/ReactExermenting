@@ -1,38 +1,287 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.categoriesContainer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.categoriesContainer label{
+  border: 1px dashed black;
+  padding:3px 10px 3px 10px;
+  cursor: move;
+}
+.categoriesContainer button{
+  border: 0.5px solid gray;
+  border-radius: 100%;
+  margin-left:5px;
+  font-size: 10px;
+  height: 20px;
+
+}
+.inputStyle{
+  border: 1px dashed black;
+  width: 100px;
+  height:20px;
+
+}
+.verticalLineMain{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height:30px;
+  border:none;
+  margin-top:5px;
+  
+ }
+.verticalLine{
+ position:relative;
+ width: 0.5px;
+ height:30px;
+ background-color: black;
+
+}
+.horizontalLine{
+  width:250px;
+  height:0.5px;
+  background-color: black;
+}
+.horizontalLine1{
+  width:450px;
+  height:0.5px;
+  background-color: black;
+}
+.dynamicComponentStyle{
+  display:flex;
+  flex-direction: column;
+
+  margin:5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.categoriesStyle{
+  display:flex;
+  flex-direction: row;
+
+  margin:-5px 10px 10px 5px ;
+}
+.scategoriesStyle{
+  display:flex;
+  flex-direction: row;
+
+  margin:-5px 10em 10px 5px ;
+}
+.mainCategoryStyle{
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  margin-right:3em;
+
+}
+.mainCategoryStyle button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width:20px;
+  height:20px;
+  border:none;
+  margin:2px;
+}
+
+.categoryStyle{
+  display:flex;
+  flex-direction: row;
+  margin-bottom:30px;
+}
+.subCategoriesStyle{
+  display:flex;
+  position:relative;
+  flex-direction: row;
+  margin-bottom:30px;
+}
+.subCategoryStyle{
+  display:flex;
+  flex-direction:row
+}
+.buttonStyle{
+  display: flex;
+  flex-direction: row;
+}
+.buttonStyle button{
+  display: flex;
+  flex-direction: row;
+  border-radius: 100%;
+  margin-left:2px;
+  width:20px;
+  height:20px;
+  border:0.5px solid gray;
+  background-color: rgb(219, 215, 215);
+  cursor:pointer;
+
+    
+}
+
+.secondVerticalLineOption{
+  display:flex;
+  flex-direction: column;
+margin:-5px;
+
+}
+.verticalLines{
+  display:flex;
+  justify-content: space-between;
+}
+.modalStyle{
+  width:170px;
+  height:80px;
+  border: 1px    dashed gray;
+  background-color:rgb(238, 230, 230);
+  font-size:14px;
+  padding:10px;
+  
+}
+.modalStyle button{
+  border: 1px dashed black;
+  width: 70px;
+  height:30px;
+  margin-top:15px;
+  margin-right:5px;
+}
+
+.sverticalLine{
+  position:relative;
+  width: 0.5px; 
+  height:30px;
+  background-color: black;
+
+ }
+ 
+ .ssecondVerticalLineOption{
+  display:flex;
+  flex-direction: column;
+margin:-5px;
+
+}
+.sverticalLines{
+  display:flex;
+  justify-content: space-between;
+}
+.sverticalLineMain{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height:30px;
+ 
+  border:none;
+  margin-top:5px;
+  
+ }
+
+ .headerStyle{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 1em;
+ }
+.listViewStyle{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right:2em;
+}
+ .listViewStyle label{
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: blue;
+  color:white;
+  padding:7px;
+  font-size:12px;
+  margin-right:5px;
+ }
+ .listViewStyle span{
+margin-right:5px;
+ }
+ .listViewStyle div{
+  background-color: white;
+ }
+.zoomStyle button,select{
+  background-color: white;
+  margin-right:1px;
+  border: 0.5px solid gray;
+}
+
+
+.serviceStyle{
+  margin-left: 1em;
+  font-size:30px;
+}
+.serviceStyle button{
+  background-color: rgb(151, 56, 56);
+  margin-left:2px;
+  border-radius: 7px;
+  border:none;
+  height:18px;
+  width:20px;
+
+}
+
+
+.topStyle{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  rotate: 270deg;
+  width: 30px;
+  height: 100px;
+  margin-top:-2em;
+  background-color: rgb(173, 171, 171);
+  border:none;
+}
+.leftStyle{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  rotate: 180deg;
+  width: 30px;
+  height: 100px;
+  background-color: rgb(173, 171, 171);
+  border:none;
+}
+
+.rightStyle{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  rotate: 0deg;
+  width: 30px;
+  height: 100px;
+  background-color: rgb(173, 171, 171);
+  border:none;
+}
+.bottomStyle{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  rotate: 90deg;
+  width: 30px;
+  height: 100px;
+  background-color: rgb(173, 171, 171);
+  border:none;
+  margin-bottom:-2.5em;
+}
+
+.deleteButtonStyle{
+  background-color: rgb(144, 27, 27);
+  color:white;
+}
+
+.saveButtonStyle{
+  background-color: yellow;
 }

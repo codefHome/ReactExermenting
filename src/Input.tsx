@@ -22,6 +22,7 @@ const Input = ({ id, onRemove }: InputProps) => {
   const [sVLine, setSVLine] = useState<string[]>([]);
   const { rightC, rightSV, rightSC, setRightSC } = useContext(ChallengeContext);
 
+
   const handleAddSubInput = () => {
     if (sCount >= 4) {
       setSWidth(sWidth + 70);
@@ -35,7 +36,6 @@ const Input = ({ id, onRemove }: InputProps) => {
   };
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
-    setDisabled(event.target.value === "");
   };
 
   const handleSubmit = () => {
@@ -79,7 +79,7 @@ const Input = ({ id, onRemove }: InputProps) => {
     }
 
   };
-  console.log(subInputs);
+
   return (
     <div style={{ right: `${rightC + 30}px` }} className="mainCategoryStyle">
       <div className="categoryStyle">
@@ -191,7 +191,7 @@ const Input = ({ id, onRemove }: InputProps) => {
         </div>
       </div>
       <div style={{ display: "inline-block", width: "10px", height: "0px" }}>
-        <Modal handleClose={() => handleClose()} showModal={showModal} />
+        <Modal handleClose={() => handleClose()} showModal={showModal}/>
       </div>
     </div>
   );
